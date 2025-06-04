@@ -2,77 +2,85 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const SubsidyInfo = () => {
   return (
-    <section id="subsidy-info" className="py-16 px-4 bg-white">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-12">
-          Что такое субсидия на ЖКУ и зачем она нужна?
+    <section
+      id="subsidy-info"
+      className="py-20 px-4 bg-gradient-to-b from-white to-blue-50"
+    >
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-5xl md:text-6xl font-bold text-center text-gray-800 mb-16">
+          Что такое субсидия ЖКУ и зачем она нужна?
         </h2>
 
-        <Card className="mb-8 border-2 border-blue-200">
-          <CardHeader className="bg-blue-50">
-            <CardTitle className="text-2xl md:text-3xl text-blue-700 text-center">
+        <Card className="mb-12 border-2 border-blue-300 shadow-xl">
+          <CardHeader className="bg-gradient-to-r from-blue-100 to-blue-50 py-8">
+            <CardTitle className="text-3xl md:text-4xl text-blue-700 text-center">
+              <span className="text-4xl mr-3">💰</span>
               Простыми словами
             </CardTitle>
           </CardHeader>
-          <CardContent className="p-8">
-            <p className="text-xl md:text-2xl text-gray-700 leading-relaxed text-center">
-              Субсидия – это деньги, которые государство возвращает вам за
-              оплату квартиры и коммунальных услуг, чтобы уменьшить ваши
-              расходы.
+          <CardContent className="p-10">
+            <p className="text-2xl md:text-3xl text-gray-700 leading-relaxed text-center">
+              Субсидия – это деньги от государства, которые помогают вам платить
+              меньше за квартиру и коммунальные услуги каждый месяц.
             </p>
           </CardContent>
         </Card>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <Card className="border-2 border-green-200">
-            <CardHeader className="bg-green-50">
-              <CardTitle className="text-xl md:text-2xl text-green-700 flex items-center gap-3">
-                <span className="text-3xl">💰</span>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
+          <Card className="border-2 border-green-300 shadow-lg hover:shadow-xl transition-shadow">
+            <CardHeader className="bg-gradient-to-r from-green-100 to-green-50 py-6">
+              <CardTitle className="text-2xl md:text-3xl text-green-700 flex items-center gap-4">
+                <span className="text-4xl">💰</span>
                 Экономия денег
               </CardTitle>
             </CardHeader>
-            <CardContent className="p-6">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Вы будете платить за ЖКУ значительно меньше. Государство
-                компенсирует часть ваших расходов каждый месяц.
+            <CardContent className="p-8">
+              <p className="text-xl text-gray-700 leading-relaxed">
+                Вы будете платить за свет, воду, газ и отопление значительно
+                меньше. Государство возвращает вам часть денег каждый месяц.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-2 border-blue-200">
-            <CardHeader className="bg-blue-50">
-              <CardTitle className="text-xl md:text-2xl text-blue-700 flex items-center gap-3">
-                <span className="text-3xl">🏠</span>
+          <Card className="border-2 border-blue-300 shadow-lg hover:shadow-xl transition-shadow">
+            <CardHeader className="bg-gradient-to-r from-blue-100 to-blue-50 py-6">
+              <CardTitle className="text-2xl md:text-3xl text-blue-700 flex items-center gap-4">
+                <span className="text-4xl">🏠</span>
                 Помощь с квартирой
               </CardTitle>
             </CardHeader>
-            <CardContent className="p-6">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Субсидия покрывает расходы на свет, воду, газ, отопление,
-                управление домом и другие коммунальные услуги.
+            <CardContent className="p-8">
+              <p className="text-xl text-gray-700 leading-relaxed">
+                Субсидия покрывает все коммунальные услуги: электричество, воду,
+                газ, отопление и услуги управляющей компании.
               </p>
             </CardContent>
           </Card>
         </div>
 
-        <Card className="bg-orange-50 border-2 border-orange-200">
-          <CardHeader>
-            <CardTitle className="text-2xl md:text-3xl text-orange-700 text-center flex items-center justify-center gap-3">
-              <span className="text-4xl">⚠️</span>
+        <Card className="bg-gradient-to-r from-amber-100 to-orange-100 border-2 border-orange-300 shadow-xl">
+          <CardHeader className="py-8">
+            <CardTitle className="text-3xl md:text-4xl text-orange-700 text-center flex items-center justify-center gap-4">
+              <span className="text-5xl">⚠️</span>
               Важно помнить
             </CardTitle>
           </CardHeader>
-          <CardContent className="p-8">
-            <div className="text-lg md:text-xl text-gray-700 leading-relaxed space-y-4">
-              <p>
-                • Субсидия помогает <strong>текущим платежам</strong>, но не
+          <CardContent className="p-10">
+            <div className="text-xl md:text-2xl text-gray-700 leading-relaxed space-y-6">
+              <p className="flex items-start gap-3">
+                <span className="text-2xl">•</span>
+                Субсидия помогает <strong>будущим платежам</strong>, но не
                 списывает старые долги
               </p>
-              <p>
-                • Если у вас есть долги, нужно сначала договориться о рассрочке
-                с управляющей компанией
+              <p className="flex items-start gap-3">
+                <span className="text-2xl">•</span>
+                Если у вас есть долги, нужно сначала договориться о рассрочке с
+                управляющей компанией
               </p>
-              <p>• Субсидию нужно переоформлять каждые 6 месяцев</p>
+              <p className="flex items-start gap-3">
+                <span className="text-2xl">•</span>
+                Субсидию нужно продлевать каждые 6 месяцев
+              </p>
             </div>
           </CardContent>
         </Card>
